@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martins & Associados | Advocacia de Alto Padrão</title>
+    
+    <!-- CSS Local -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    
+    <!-- Bibliotecas Externas -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body class="text-stone-900 overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 py-6">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 border-2 border-gold rotate-45 flex items-center justify-center">
+                    <span class="font-serif text-xl font-bold -rotate-45 text-gold">M</span>
+                </div>
+                <span class="text-xl font-serif font-bold tracking-tighter uppercase text-white">Martins <span
+                        class="text-gold">&</span> Associados</span>
+            </div>
+
+            <div class="hidden lg:flex items-center gap-10">
+                <a href="#home"
+                    class="text-xs font-bold uppercase tracking-widest text-white hover:text-gold transition-colors">Início</a>
+                <a href="#sobre"
+                    class="text-xs font-bold uppercase tracking-widest text-white hover:text-gold transition-colors">O
+                    Escritório</a>
+                <a href="#atuacao"
+                    class="text-xs font-bold uppercase tracking-widest text-white hover:text-gold transition-colors">Atuação</a>
+                <a href="#equipe"
+                    class="text-xs font-bold uppercase tracking-widest text-white hover:text-gold transition-colors">Especialistas</a>
+                <a href="#contato"
+                    class="bg-gold text-white px-8 py-3 text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-stone-900 transition-all">Consulta
+                    Prioritária</a>
+            </div>
+
+            <!-- Mobile Menu Icon -->
+            <button id="mobile-menu-btn" class="lg:hidden text-white focus:outline-none z-50 relative">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 transition-transform duration-300" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 bg-[#0a251f]/95 backdrop-blur-xl z-40 transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col items-center justify-center gap-8">
+            <a href="#home" class="mobile-link text-2xl font-bold uppercase tracking-widest text-white hover:text-gold transition-colors">Início</a>
+            <a href="#sobre" class="mobile-link text-2xl font-bold uppercase tracking-widest text-white hover:text-gold transition-colors">O Escritório</a>
+            <a href="#atuacao" class="mobile-link text-2xl font-bold uppercase tracking-widest text-white hover:text-gold transition-colors">Atuação</a>
+            <a href="#equipe" class="mobile-link text-2xl font-bold uppercase tracking-widest text-white hover:text-gold transition-colors">Especialistas</a>
+            <a href="#contato" class="mobile-link bg-gold text-white px-8 py-4 text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-stone-900 transition-all">Consulta Prioritária</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center bg-[#0a251f] pt-32 md:pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#0a251f] via-[#0a251f]/80 to-transparent z-10"></div>
+            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=2000"
+                class="w-full h-full object-cover opacity-50" alt="Law Office">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-20 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div data-aos="fade-right" data-aos-duration="1200">
+                <span class="inline-block text-gold font-bold tracking-[0.4em] uppercase mb-6 text-sm">Estratégia & Alta
+                    Performance</span>
+                <h1 class="text-4xl md:text-6xl font-serif text-white leading-tight mb-5">
+                    Justiça que <span class="italic text-gold">Inova</span>,<br> Direito que <span
+                        class="italic">Protege.</span>
+                </h1>
+                <p class="text-stone-400 text-lg md:text-xl mb-12 max-w-lg leading-relaxed font-light">
+                    Soluções jurídicas sofisticadas para desafios complexos. Atuação consultiva e contenciosa focada em
+                    resultados excepcionais.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <a href="#contato"
+                        class="bg-gold text-white px-5 py-5 font-bold uppercase tracking-widest hover:bg-white hover:text-stone-900 transition-all text-center">Falar
+                        com um Sócio</a>
+                    <a href="#atuacao"
+                        class="border border-white/20 text-white px-5 py-5 font-bold uppercase tracking-widest hover:bg-white/10 transition-all text-center">Ver
+                        Especialidades</a>
+                </div>
+            </div>
+
+            <div class="hidden lg:block relative" data-aos="zoom-in-left" data-aos-duration="1500">
+                <div class="relative z-10 modern-mask overflow-hidden border-8 border-gold/10">
+                    <img src="https://i.pinimg.com/1200x/2c/68/82/2c6882d0037a4bed9b298964fa81038c.jpg" alt="Advogado"
+                        class="w-full h-[600px] object-cover">
+                </div>
+                <!-- Elementos decorativos -->
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-gold/10 organic-blob animate-pulse"></div>
+                <div class="absolute -bottom-10 -left-10 w-64 h-64 border-2 border-gold/20 rounded-full"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By -->
+    <section class="bg-white py-12 border-b border-stone-100">
+        <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-between items-center gap-8 opacity-40">
+            <p class="text-xs font-bold uppercase tracking-widest text-stone-400">Reconhecido por:</p>
+            <span class="text-2xl font-serif font-bold">CHAMBERS</span>
+            <span class="text-2xl font-serif font-bold">THE LEGAL 500</span>
+            <span class="text-2xl font-serif font-bold">BEST LAWYERS</span>
+            <span class="text-2xl font-serif font-bold">OAB PREMIUM</span>
+        </div>
+    </section>
+
+    <!-- Sobre o Escritório -->
+    <section id="sobre" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+            <div class="relative" data-aos="fade-up">
+                <div class="rounded-[30px] md:rounded-[60px] rounded-tl-none overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=1000"
+                        alt="Escritório Reunião">
+                </div>
+                <div class="absolute -bottom-5 -right-5 md:-bottom-10 md:-right-10 bg-[#0a251f] p-8 md:p-12 text-white shadow-2xl hidden sm:block">
+                    <p class="text-3xl md:text-5xl font-serif text-gold mb-2">25</p>
+                    <p class="text-[10px] md:text-xs font-bold uppercase tracking-widest">Anos de Histórias <br> de Sucesso</p>
+                </div>
+            </div>
+
+            <div data-aos="fade-left">
+                <span class="text-gold font-bold tracking-[0.3em] uppercase mb-4 text-sm block">Excelência
+                    Consolidada</span>
+                <h2 class="text-4xl md:text-5xl font-serif mb-8 leading-tight">Uma Abordagem <span
+                        class="italic text-gold">Singular</span> para Problemas Reais.</h2>
+                <p class="text-stone-500 text-lg leading-relaxed mb-10">
+                    No Martins & Associados, não entregamos apenas documentos jurídicos; entregamos tranquilidade
+                    estratégica. Nosso foco é o atendimento personalizado, onde cada cliente tem acesso direto aos
+                    sócios.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-cream flex items-center justify-center shrink-0">
+                            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">Ética Inabalável</h4>
+                            <p class="text-stone-400 text-sm">Padrões globais de compliance em cada etapa.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-cream flex items-center justify-center shrink-0">
+                            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">Resposta Ágil</h4>
+                            <p class="text-stone-400 text-sm">A velocidade que o mercado corporativo exige.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Áreas de Atuação -->
+    <section id="atuacao" class="py-16 md:py-24 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-6 text-center mb-12 md:mb-20">
+            <span class="text-gold font-bold tracking-[0.3em] uppercase mb-4 text-sm block">Especialidades</span>
+            <h2 class="text-4xl md:text-5xl font-serif">Áreas de Especialização</h2>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="card-service p-8 md:p-12 bg-white border-b-4 border-gold group" data-aos="fade-up"
+                data-aos-delay="100">
+                <div class="mb-8 group-hover:scale-110 transition-transform">
+                    <svg class="w-12 h-12 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-serif mb-6">Direito Corporativo</h3>
+                <p class="text-stone-400 group-hover:text-stone-300 mb-8 leading-relaxed">Estruturação de M&A,
+                    governança corporativa e proteção patrimonial para holdings.</p>
+                <a href="#"
+                    class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-gold group-hover:text-white">Detalhes
+                    <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path d="M9 5l7 7-7 7" stroke-width="2"></path>
+                    </svg></a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card-service p-8 md:p-12 bg-white border-b-4 border-gold group" data-aos="fade-up"
+                data-aos-delay="200">
+                <div class="mb-8 group-hover:scale-110 transition-transform">
+                    <svg class="w-12 h-12 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                            d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-serif mb-6">Contencioso Cível</h3>
+                <p class="text-stone-400 group-hover:text-stone-300 mb-8 leading-relaxed">Defesa estratégica em disputas
+                    contratuais e responsabilidade civil de alta complexidade.</p>
+                <a href="#"
+                    class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-gold group-hover:text-white">Detalhes
+                    <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path d="M9 5l7 7-7 7" stroke-width="2"></path>
+                    </svg></a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card-service p-8 md:p-12 bg-white border-b-4 border-gold group" data-aos="fade-up"
+                data-aos-delay="300">
+                <div class="mb-8 group-hover:scale-110 transition-transform">
+                    <svg class="w-12 h-12 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-serif mb-6">Gestão Tributária</h3>
+                <p class="text-stone-400 group-hover:text-stone-300 mb-8 leading-relaxed">Planejamento fiscal preventivo
+                    e recuperação de créditos federais e estaduais.</p>
+                <a href="#"
+                    class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-gold group-hover:text-white">Detalhes
+                    <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path d="M9 5l7 7-7 7" stroke-width="2"></path>
+                    </svg></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metodologia -->
+    <section class="py-16 md:py-24 bg-[#0a251f] text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div data-aos="fade-right">
+                    <span class="text-gold font-bold tracking-[0.3em] uppercase mb-4 text-sm block">Nosso
+                        Processo</span>
+                    <h2 class="text-4xl md:text-5xl font-serif mb-12">Como construímos a sua <span
+                            class="italic text-gold">vitória.</span></h2>
+
+                    <div class="space-y-12">
+                        <div class="flex gap-6">
+                            <span class="text-4xl font-serif text-gold/30">01</span>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Diagnóstico Profundo</h4>
+                                <p class="text-stone-400">Análise exaustiva dos riscos e oportunidades do seu caso.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <span class="text-4xl font-serif text-gold/30">02</span>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Design de Estratégia</h4>
+                                <p class="text-stone-400">Desenvolvimento de um roadmap jurídico exclusivo e antecipação
+                                    de cenários.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <span class="text-4xl font-serif text-gold/30">03</span>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Execução Incisiva</h4>
+                                <p class="text-stone-400">Ação coordenada com monitoramento em tempo real dos
+                                    resultados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative" data-aos="fade-left">
+                    <div class="organic-blob overflow-hidden w-full h-[500px] border-4 border-gold/20">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1000"
+                            alt="Workflow" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Caneta Decorativa -->
+                    <img src="assets/imagens/caneta.png" alt="Caneta" 
+                         class="hidden lg:block absolute -bottom-12 -right-12 w-48 h-auto drop-shadow-2xl z-10 rotate-[-15deg]"
+                         data-aos="fade-up" data-aos-delay="300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <span class="text-gold font-bold tracking-[0.3em] uppercase mb-4 text-sm block">Voz dos Nossos
+                Clientes</span>
+            <h2 class="text-4xl md:text-5xl font-serif mb-12 md:mb-20 leading-tight">Testemunhos de Confiança</h2>
+
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12">
+                <div class="p-8 md:p-12 bg-cream text-left relative" data-aos="fade-up">
+                    <svg class="w-12 h-12 text-gold/20 absolute top-8 right-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.154c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                    </svg>
+                    <p class="text-xl font-serif italic mb-8 text-stone-700 leading-relaxed">
+                        "A capacidade técnica da equipe superou nossas expectativas. Resolveram uma disputa de M&A que
+                        se arrastava por anos em apenas seis meses de negociações estratégicas."
+                    </p>
+                    <div>
+                        <p class="font-bold uppercase tracking-widest text-xs text-stone-900">CEO, Global Tech Solutions
+                        </p>
+                        <p class="text-gold text-xs">Empresa Listada em Bolsa</p>
+                    </div>
+                </div>
+                <div class="p-8 md:p-12 bg-cream text-left relative" data-aos="fade-up" data-aos-delay="200">
+                    <svg class="w-12 h-12 text-gold/20 absolute top-8 right-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.154c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                    </svg>
+                    <p class="text-xl font-serif italic mb-8 text-stone-700 leading-relaxed">
+                        "O atendimento boutique é real. Senti que minha causa era a única prioridade do escritório.
+                        Ética e competência definem este time."
+                    </p>
+                    <div>
+                        <p class="font-bold uppercase tracking-widest text-xs text-stone-900">Dr. Eduardo Santos</p>
+                        <p class="text-gold text-xs">Empresário do Setor Imobiliário</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Impactante -->
+    <section class="py-24 bg-gold">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-6xl font-serif text-white mb-8">Proteja seu <span
+                    class="text-stone-900 italic">legado</span> hoje.</h2>
+            <p class="text-white/80 text-xl mb-12 max-w-2xl mx-auto">
+                Não deixe para amanhã a segurança jurídica que você precisa agora. Nossos sócios estão à disposição para
+                uma análise preliminar.
+            </p>
+            <a href="#contato"
+                class="bg-stone-900 text-white px-12 py-6 font-bold uppercase tracking-widest hover:scale-105 transition-all inline-block shadow-2xl">Agendar
+                Reunião Privada</a>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-4xl font-serif text-center mb-16">Dúvidas Frequentes</h2>
+
+            <div class="space-y-4">
+                <div class="border-b border-stone-200 py-6 group cursor-pointer">
+                    <div class="flex justify-between items-center mb-4">
+                        <h4 class="font-bold text-lg group-hover:text-gold transition-colors">Como funciona a primeira
+                            consulta?</h4>
+                        <span class="text-gold">+</span>
+                    </div>
+                    <p class="text-stone-400 text-sm hidden group-hover:block animate-fade">Realizamos uma conferência
+                        inicial para entender os detalhes do caso e definir a viabilidade jurídica antes de qualquer
+                        contratação.</p>
+                </div>
+                <div class="border-b border-stone-200 py-6 group cursor-pointer">
+                    <div class="flex justify-between items-center mb-4">
+                        <h4 class="font-bold text-lg group-hover:text-gold transition-colors">O escritório atua fora do
+                            estado?</h4>
+                        <span class="text-gold">+</span>
+                    </div>
+                    <p class="text-stone-400 text-sm hidden group-hover:block animate-fade">Sim, possuímos advogados
+                        correspondentes em todo o território nacional e parcerias estratégicas para casos
+                        internacionais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-24 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-24">
+                <div data-aos="fade-right">
+                    <h2 class="text-5xl font-serif mb-12">Vamos iniciar sua <span
+                            class="text-gold italic">defesa.</span></h2>
+                    <ul class="space-y-8">
+                        <li class="flex gap-6 items-start">
+                            <div class="w-12 h-12 bg-gold flex items-center justify-center text-white shrink-0"><svg
+                                    class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                </svg></div>
+                            <div>
+                                <p class="font-bold uppercase tracking-widest text-xs mb-2">Sede Principal</p>
+                                <p class="text-stone-400">Av. Historiador Rubens de Mendonça, 1000 <br> Bosque da Saúde, Cuiabá - MT, 78000-000
+                                </p>
+                            </div>
+                        </li>
+                        <li class="flex gap-6 items-start">
+                            <div class="w-12 h-12 bg-gold flex items-center justify-center text-white shrink-0"><svg
+                                    class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                                </svg></div>
+                            <div>
+                                <p class="font-bold uppercase tracking-widest text-xs mb-2">Telefone Direto</p>
+                                <p class="text-stone-400">(65) 3322-0000 <br> (65) 99999-9999</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-12 shadow-2xl" data-aos="fade-left">
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <input type="text" placeholder="Nome Completo"
+                                class="w-full bg-stone-50 border-none p-4 focus:ring-1 focus:ring-gold outline-none">
+                            <input type="email" placeholder="E-mail Executivo"
+                                class="w-full bg-stone-50 border-none p-4 focus:ring-1 focus:ring-gold outline-none">
+                        </div>
+                        <input type="text" placeholder="Assunto Jurídico"
+                            class="w-full bg-stone-50 border-none p-4 focus:ring-1 focus:ring-gold outline-none">
+                        <textarea rows="4" placeholder="Como podemos ajudá-lo hoje?"
+                            class="w-full bg-stone-50 border-none p-4 focus:ring-1 focus:ring-gold outline-none"></textarea>
+                        <button
+                            class="w-full bg-stone-900 text-white font-bold uppercase tracking-widest py-5 hover:bg-gold transition-colors">Enviar
+                            Solicitação</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0a251f] pt-16 md:pt-24 pb-12 text-white border-t border-gold/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-4 gap-10 lg:gap-16 mb-16 md:mb-24">
+                <div class="col-span-1 lg:col-span-1">
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="w-8 h-8 border border-gold rotate-45 flex items-center justify-center">
+                            <span class="font-serif text-sm -rotate-45 text-gold">M</span>
+                        </div>
+                        <span class="font-serif font-bold uppercase tracking-tighter">Martins & Associados</span>
+                    </div>
+                    <p class="text-stone-500 text-sm leading-relaxed">Referência em advocacia de alta performance,
+                        aliando tecnologia à tradição jurídica.</p>
+                </div>
+
+                <div>
+                    <h5 class="font-serif text-lg mb-8">O Escritório</h5>
+                    <ul class="space-y-4 text-stone-500 text-sm">
+                        <li><a href="#" class="hover:text-gold transition-colors">Advogados</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors">Publicações</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors">Carreiras</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors">Compliance</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="font-serif text-lg mb-8">Siga-nos</h5>
+                    <div class="flex gap-4">
+                        <!-- Facebook -->
+                        <a href="#" aria-label="Facebook"
+                            class="w-10 h-10 flex items-center justify-center hover:scale-110 hover:opacity-80 transition-all duration-300">
+                            <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="#" aria-label="Instagram"
+                            class="w-10 h-10 flex items-center justify-center hover:scale-110 hover:opacity-80 transition-all duration-300">
+                            <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="#" aria-label="LinkedIn"
+                            class="w-10 h-10 flex items-center justify-center hover:scale-110 hover:opacity-80 transition-all duration-300">
+                            <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="font-serif text-lg mb-8">Fale Conosco</h5>
+                    <p class="text-gold font-bold text-xl">(65) 3322-0000</p>
+                    <p class="text-stone-500 text-sm mt-1">generico@empresa.com.br</p>
+                    <p class="text-stone-500 text-xs mt-2 uppercase tracking-widest">Disponibilidade 24/7 p/ emergências
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-stone-600 text-[10px] uppercase tracking-widest gap-4">
+                <p>© 2024 Martins & Associados. OAB/MT 00.000. Todos os direitos reservados.</p>
+                <div class="flex gap-8 font-bold">
+                    <a href="#" class="hover:text-gold">Política de Privacidade</a>
+                    <a href="#" class="hover:text-gold">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5565999999999?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" 
+       target="_blank" 
+       id="whatsapp-btn"
+       class="fixed bottom-6 right-6 z-50 opacity-0 translate-y-10 pointer-events-none transition-all duration-300 hover:scale-110"
+       aria-label="Falar no WhatsApp">
+        <div class="w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow border-2 border-white/20">
+            <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+        </div>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

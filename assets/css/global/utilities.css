@@ -1,0 +1,30 @@
+/* Máscara moderna para imagens */
+.modern-mask {
+    clip-path: polygon(10% 0, 100% 0, 100% 85%, 90% 100%, 0 100%, 0 15%);
+}
+
+.organic-blob {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+.glass-nav {
+    background: rgba(10, 37, 31, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(196, 166, 122, 0.2);
+}
+
+.hover-gold:hover {
+    color: var(--gold);
+}
+
+.bg-gold {
+    background-color: var(--gold);
+}
+
+.text-gold {
+    color: var(--gold);
+}
+
+.border-gold {
+    border-color: var(--gold);
+}

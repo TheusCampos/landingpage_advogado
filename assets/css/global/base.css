@@ -1,0 +1,21 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--cream);
+}
+
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gold);
+}

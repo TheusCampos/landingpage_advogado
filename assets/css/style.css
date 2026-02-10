@@ -1,0 +1,72 @@
+/* Variables */
+:root {
+    --gold: #c4a67a;
+    --dark-green: #0a251f;
+    --cream: #fdfcf0;
+}
+
+/* Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--cream);
+}
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--cream);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--gold);
+}
+
+/* Utilities */
+.modern-mask {
+    clip-path: polygon(10% 0, 100% 0, 100% 85%, 90% 100%, 0 100%, 0 15%);
+}
+.organic-blob {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+.glass-nav {
+    background: rgba(10, 37, 31, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(196, 166, 122, 0.2);
+}
+.hover-gold:hover {
+    color: var(--gold);
+}
+.bg-gold {
+    background-color: var(--gold);
+}
+.text-gold {
+    color: var(--gold);
+}
+.border-gold {
+    border-color: var(--gold);
+}
+
+/* Services Section */
+.card-service {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-service:hover {
+    transform: translateY(-12px);
+    background-color: var(--dark-green);
+    color: white;
+}
